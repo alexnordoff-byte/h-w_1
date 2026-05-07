@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подводные приключения — Аквариумистика для всех</title>
+  <meta name="description" content="Интерактивный портал об аквариумистике: виды рыбок, советы по уходу, сообщество любителей и галерея аквариумов.">
+  <meta name="keywords" content="аквариум, рыбки, аквариумистика, гуппи, неон, морской аквариум, травник">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Подводные приключения">
+  <meta property="og:description" content="Погрузись в мир аквариумистики вместе с нами!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Подводные приключения",
+    "url": "https://podvodnie.ru",
+    "description": "Интерактивный портал об аквариумистике",
+    "foundingDate": "2026",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@podvodnie.ru",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== ШАПКА / НАВИГАЦИЯ ========== -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="На главную">
+        <span class="logo__icon">🐟</span>
+        <span class="logo__text">Подводные приключения</span>
+      </a>
+      <button class="burger" aria-label="Меню" aria-expanded="false" id="burgerBtn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Основное меню">
+        <ul class="nav__list" id="navList">
+          <!-- Навигация заполняется из JS -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== ГЛАВНАЯ (HERO) ========== -->
+  <section class="hero" id="hero" role="region" aria-label="Главная">
+    <!-- Параллакс-слои -->
+    <div class="parallax" aria-hidden="true">
+      <div class="parallax__layer parallax__layer--back" id="parallaxBack"></div>
+      <div class="parallax__layer parallax__layer--mid" id="parallaxMid"></div>
+      <div class="parallax__layer parallax__layer--front" id="parallaxFront"></div>
+    </div>
+    <!-- Анимированные пузырьки -->
+    <div class="bubbles" id="bubblesContainer" aria-hidden="true"></div>
+    <!-- Рыбка-гид -->
+    <div class="fish-guide" id="fishGuide" role="img" aria-label="Рыбка-гид">
+      <svg class="fish-guide__svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Тело рыбки (полосатое) -->
+        <ellipse cx="50" cy="40" rx="35" ry="18" fill="#FF6B35"/>
+        <path d="M20 30 Q30 30 30 40 Q30 50 20 50 Z" fill="#FF6B35"/>
+        <ellipse cx="50" cy="40" rx="35" ry="18" fill="#FF6B35" opacity="0"/>
+        <!-- Полоски -->
+        <path d="M37 22 Q42 40 37 58" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+        <path d="M47 23 Q52 40 47 57" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+        <path d="M57 25 Q62 40 57 55" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+        <!-- Глаз -->
+        <circle cx="68" cy="33" r="6" fill="white"/>
+        <circle cx="70" cy="33" r="3.5" fill="#0B3C5D"/>
+        <circle cx="71.5" cy="31.5" r="1.5" fill="white"/>
+        <!-- Плавники -->
+        <path d="M45 22 Q50 8 55 22" fill="#FF8C5A" stroke="#E55A2B" stroke-width="1"/>
+        <path d="M40 58 Q45 72 50 58" fill="#FF8C5A" stroke="#E55A2B" stroke-width="1"/>
+        <!-- Хвост (анимированный) -->
+        <g class="fish-guide__tail">
+          <path d="M15 40 L0 28 L0 52 Z" fill="#FF6B35" stroke="#E55A2B" stroke-width="1"/>
+        </g>
+        <!-- Второй хвостовой плавник -->
+        <path d="M15 40 L3 35 L3 45 Z" fill="#FF8C5A" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="container hero__content">
+      <h1 class="hero__title">Подводные приключения</h1>
+      <p class="hero__subtitle">Погрузись в мир аквариумистики вместе с нами!</p>
+      <div class="hero__actions">
+        <a href="#fish" class="btn btn--primary">Исследовать рыбок</a>
+        <a href="#tips" class="btn btn--outline">Начать ухаживать</a>
+        <a href="#community" class="btn btn--ghost">В сообщество</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВОЛНА-РАЗДЕЛИТЕЛЬ ========== -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#0B3C5D"/>
+      <path d="M0,60 C360,20 1080,80 1440,40 L1440,100 L0,100 Z" fill="#0a2f4a" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ========== РЫБКИ (КАРТОЧКИ) ========== -->
+  <section class="section fish" id="fish" role="region" aria-label="Виды рыбок">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Виды рыбок</h2>
+        <p class="section__desc">Познакомьтесь с нашими подводными обитателями</p>
+      </div>
+      <div class="fish__grid" id="fishGrid">
+        <!-- Карточки заполняются из JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВОЛНА-РАЗДЕЛИТЕЛЬ (обратная) ========== -->
+  <div class="wave-divider wave-divider--flip" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,60 C360,0 1080,100 1440,40 L1440,100 L0,100 Z" fill="#0a2f4a" opacity="0.3"/>
+      <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#0B3C5D"/>
+    </svg>
+  </div>
+
+  <!-- ========== СОВЕТЫ ПО УХОДУ ========== -->
+  <section class="section tips" id="tips" role="region" aria-label="Советы по уходу">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Советы по уходу</h2>
+        <p class="section__desc">Всё, что нужно знать для счастливой жизни ваших питомцев</p>
+      </div>
+      <div class="tips__tabs" role="tablist" id="tipsTabs">
+        <!-- Вкладки заполняются из JS -->
+      </div>
+      <div class="tips__panels" id="tipsPanels">
+        <!-- Панели заполняются из JS -->
+      </div>
+      <div class="tips__save">
+        <button class="btn btn--small btn--outline" id="saveFavoritesBtn">
+          &#9733; Сохранить в избранное
+        </button>
+        <span class="tips__save-msg" id="saveFavoritesMsg"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВОЛНА-РАЗДЕЛИТЕЛЬ ========== -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#0B3C5D"/>
+      <path d="M0,60 C360,20 1080,80 1440,40 L1440,100 L0,100 Z" fill="#0a2f4a" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ========== СООБЩЕСТВО ========== -->
+  <section class="section community" id="community" role="region" aria-label="Сообщество">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Сообщество любителей</h2>
+        <p class="section__desc">Присоединяйтесь к подводному клубу!</p>
+      </div>
+      <div class="community__layout">
+        <div class="community__feed" id="communityFeed">
+          <!-- Посты заполняются из JS -->
+        </div>
+        <aside class="community__sidebar">
+          <div class="glass-card community__join">
+            <h3 class="community__join-title">Присоединиться</h3>
+            <p class="community__join-text">Получайте свежие советы, истории и приглашения на мероприятия</p>
+            <form class="subscribe-form" id="subscribeForm">
+              <div class="form-group">
+                <label for="subName" class="sr-only">Ваше имя</label>
+                <input type="text" id="subName" class="form-input" placeholder="Ваше имя" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="subEmail" class="sr-only">Email</label>
+                <input type="email" id="subEmail" class="form-input" placeholder="Email" required autocomplete="email">
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Подписаться</button>
+            </form>
+            <p class="community__join-note">Без спама. Только рыбки и море ❤️</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВОЛНА-РАЗДЕЛИТЕЛЬ (обратная) ========== -->
+  <div class="wave-divider wave-divider--flip" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,60 C360,0 1080,100 1440,40 L1440,100 L0,100 Z" fill="#0a2f4a" opacity="0.3"/>
+      <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#0B3C5D"/>
+    </svg>
+  </div>
+
+  <!-- ========== ГАЛЕРЕЯ ========== -->
+  <section class="section gallery" id="gallery" role="region" aria-label="Галерея аквариумов">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Галерея аквариумов</h2>
+        <p class="section__desc">Вдохновляйтесь работами сообщества</p>
+      </div>
+      <div class="gallery__filters" id="galleryFilters">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="морской">Морские</button>
+        <button class="filter-btn" data-filter="пресноводный">Пресноводные</button>
+        <button class="filter-btn" data-filter="травник">Травники</button>
+        <button class="filter-btn" data-filter="цихлиды">Цихлиды</button>
+        <button class="filter-btn" data-filter="нано">Нано</button>
+      </div>
+      <div class="gallery__masonry" id="galleryMasonry">
+        <!-- Карточки галереи из JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВОЛНА-РАЗДЕЛИТЕЛЬ ========== -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#0B3C5D"/>
+      <path d="M0,60 C360,20 1080,80 1440,40 L1440,100 L0,100 Z" fill="#0a2f4a" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ========== КОНТАКТЫ ========== -->
+  <section class="section contacts" id="contacts" role="region" aria-label="Контакты">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Свяжитесь с нами</h2>
+        <p class="section__desc">Есть вопросы? Мы всегда рады помочь!</p>
+      </div>
+      <div class="contacts__layout">
+        <div class="contacts__form-wrap">
+          <form class="contacts__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="contactName" class="form-label">Имя</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Как к вам обращаться?" required>
+              <span class="form-error" id="contactNameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="example@mail.ru" required>
+              <span class="form-error" id="contactEmailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactTopic" class="form-label">Тема</label>
+              <select id="contactTopic" class="form-input form-select" required>
+                <option value="">Выберите тему</option>
+                <option value="question">Вопрос по аквариуму</option>
+                <option value="advice">Нужен совет</option>
+                <option value="cooperation">Сотрудничество</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Сообщение</label>
+              <textarea id="contactMessage" class="form-input form-textarea" rows="5" placeholder="Напишите нам..." required></textarea>
+              <span class="form-error" id="contactMessageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+          </form>
+        </div>
+        <div class="contacts__info">
+          <!-- Заглушка карты -->
+          <div class="contacts__map">
+            <div class="contacts__map-placeholder">
+              <span class="contacts__map-icon">🗺️</span>
+              <p>г. Москва, ул. Океанская, 12</p>
+            </div>
+          </div>
+          <!-- Соцсети -->
+          <div class="contacts__socials" id="socialsBlock">
+            <!-- Из JSON -->
+          </div>
+        </div>
+      </div>
+      <!-- FAQ -->
+      <div class="contacts__faq" id="faqBlock">
+        <h3 class="contacts__faq-title">Часто задаваемые вопросы</h3>
+        <div class="faq-list" id="faqList">
+          <!-- Из JSON -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ФУТЕР ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">🐟 Подводные приключения</span>
+        <p class="footer__copy">&copy; 2026 Подводные приключения. Все права защищены.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="#" class="footer__link">Условия использования</a>
+        <a href="#hero" class="footer__link">Наверх &#8593;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== МОДАЛЬНОЕ ОКНО РЫБКИ ========== -->
+  <div class="modal" id="fishModal" role="dialog" aria-modal="true" aria-label="Детальная информация о рыбке">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__content" id="modalContent">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">&times;</button>
+      <div class="modal__body" id="modalBody">
+        <!-- Контент из JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ЛАЙТБОКС ГАЛЕРЕИ ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+    <div class="lightbox__overlay" id="lightboxOverlay"></div>
+    <div class="lightbox__content">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">&times;</button>
+      <div class="lightbox__body" id="lightboxBody">
+        <div class="lightbox__placeholder">
+          <span class="lightbox__emoji" id="lightboxEmoji">🪸</span>
+          <h3 class="lightbox__title" id="lightboxTitle">Рифовый рай</h3>
+          <div class="lightbox__meta">
+            <span id="lightboxVolume">450л</span> &middot; <span id="lightboxType">Морской</span>
+          </div>
+          <div class="lightbox__actions">
+            <button class="btn btn--small btn--outline" id="lightboxFav">&#9733; В избранное</button>
+            <button class="btn btn--small btn--ghost" id="lightboxShare">&#128228; Поделиться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Уведомление с рыбкой -->
+  <div class="fish-notification" id="fishNotification" role="alert" aria-live="polite">
+    <span id="notificationMsg">🐟 Привет!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
