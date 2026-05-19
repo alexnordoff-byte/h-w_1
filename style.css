@@ -1029,6 +1029,13 @@ input, textarea, select {
   opacity: 0.7;
 }
 
+.gallery-slider__slide svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 /* Слайдер галереи */
 .gallery-slider {
   position: relative;
@@ -1291,6 +1298,15 @@ input, textarea, select {
 
 .lightbox__emoji {
   font-size: 4rem;
+}
+
+.lightbox__emoji svg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 .lightbox__title {

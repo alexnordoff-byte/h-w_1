@@ -60,14 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, author: 'КреветкоЛюб', avatar: '🦐', title: 'Креветки-альбиносы: опыт разведения', text: 'Вывел свою популяцию вишен-альбиносов! Делюсь опытом.', tags: ['#креветки', '#разведение', '#вишни'], reactions: { fish: 31, heart: 28, search: 14 }, replies: 23 }
       ],
       gallery: [
-        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'], views: [{emoji:'🪸', label:'Общий вид', desc:'Крупный риф с мягкими и жёсткими кораллами'},{emoji:'🐠', label:'Рыбки', desc:'Стая разноцветных рыб между кораллов'},{emoji:'🫧', label:'Пузырьки', desc:'Воздушные пузырьки создают динамичный фон'}] },
-        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'], views: [{emoji:'🌳', label:'Панорама', desc:'Плотные заросли амазонских растений'},{emoji:'🪵', label:'Коряги', desc:'Натуральные коряги для скалярий'},{emoji:'🍂', label:'Дно', desc:'Листовой опад и мягкий грунт'}] },
-        { id: 3, title: 'Голландский травник', volume: '180л', type: 'Пресноводный', emoji: '🌿', tags: ['травник', 'растения', 'голландский'], views: [{emoji:'🌿', label:'Общий план', desc:'Террасы растений в голландском стиле'},{emoji:'🌱', label:'Ковёр', desc:'Хемиантус и бликса на переднем плане'},{emoji:'🌺', label:'Цветение', desc:'Надводные цветы людвигии'}] },
-        { id: 4, title: 'Цихлидник', volume: '300л', type: 'Пресноводный', emoji: '🪨', tags: ['цихлиды', 'пресноводный', 'камни'], views: [{emoji:'🪨', label:'Пейзаж', desc:'Горки из камней формируют ландшафт'},{emoji:'🦎', label:'Мбуна', desc:'Яркие цихлиды охраняют территорию'},{emoji:'🏝️', label:'Сверху', desc:'Все пещеры видны при верхнем свете'}] },
-        { id: 5, title: 'Мини-нано', volume: '20л', type: 'Пресноводный', emoji: '🫧', tags: ['нано', 'пресноводный', 'новичкам'], views: [{emoji:'🫧', label:'Общий вид', desc:'Компактный травник с креветками'},{emoji:'🦐', label:'Креветки', desc:'Красные кристаллы на мхах'},{emoji:'💎', label:'Деталь', desc:'Миниатюрный мир в малом объёме'}] },
-        { id: 6, title: 'Псевдоморе', volume: '120л', type: 'Псевдоморе', emoji: '🦀', tags: ['псевдоморе', 'цихлиды', 'африка'], views: [{emoji:'🦀', label:'Панорама', desc:'Голубое освещение как на рифе'},{emoji:'🏔️', label:'Камни', desc:'Коралловые камни в пресной воде'},{emoji:'🐟', label:'Рыбы', desc:'Малавийцы на фоне белого песка'}] },
-        { id: 7, title: 'Терапевтический', volume: '60л', type: 'Пресноводный', emoji: '🌸', tags: ['креветки', 'растения', 'мирный'], views: [{emoji:'🌸', label:'Общий вид', desc:'Мягкое освещение и стая неонов'},{emoji:'✨', label:'Неоны', desc:'Голубые вспышки в толще воды'},{emoji:'🌿', label:'Растения', desc:'Валлиснерия и ротала'}] },
-        { id: 8, title: 'Морской гигант', volume: '800л', type: 'Морской', emoji: '🐋', tags: ['морской', 'большой', 'риф'], views: [{emoji:'🐋', label:'Панорама', desc:'Крупнейший риф длиной 2 метра'},{emoji:'🦈', label:'Акулы', desc:'Акулы и скаты в свободном плавании'},{emoji:'🪸', label:'Кораллы', desc:'Сотни видов от зелёных до фиолетовых'}] }
+        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'], views: [{svgKey:'1_0',emoji:'🪸',label:'Общий вид',desc:'Крупный риф с мягкими и жёсткими кораллами под голубым светом'},{svgKey:'1_1',emoji:'🐠',label:'Коралловый сад',desc:'Разноцветные рыбы среди коралловых полипов'},{svgKey:'1_2',emoji:'🫧',label:'Стая в толще',desc:'Косяк рыб в открытой голубой воде'},{svgKey:'1_3',emoji:'🪸',label:'Сверху',desc:'Вид на риф сверху — структура кораллов'}] },
+        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'], views: [{svgKey:'2_0',emoji:'🌳',label:'Панорама',desc:'Плотные заросли амазонских растений вдоль задней стенки'},{svgKey:'2_1',emoji:'🪵',label:'Коряги',desc:'Натуральные коряги создают укрытия для скалярий'},{svgKey:'2_2',emoji:'🍂',label:'Дно',desc:'Листовой опад и мягкий грунт — естественная среда'},{svgKey:'2_3',emoji:'🐟',label:'Скалярии',desc:'Скалярии среди вертикальных стеблей растений'}] },
+        { id: 3, title: 'Голландский травник', volume: '180л', type: 'Пресноводный', emoji: '🌿', tags: ['травник', 'растения', 'голландский'], views: [{svgKey:'3_0',emoji:'🌿',label:'Общий план',desc:'Классический голландский аквариум с террасами растений'},{svgKey:'3_1',emoji:'🌱',label:'Передний план',desc:'Ковёр из хемиантуса и бликсы на переднем плане'},{svgKey:'3_2',emoji:'🌺',label:'Цветущий',desc:'Надводные цветы людвигии и роталы'}] },
+        { id: 4, title: 'Цихлидник', volume: '300л', type: 'Пресноводный', emoji: '🪨', tags: ['цихлиды', 'пресноводный', 'камни'], views: [{svgKey:'4_0',emoji:'🪨',label:'Каменный пейзаж',desc:'Горки из камней формируют природный ландшафт'},{svgKey:'4_1',emoji:'🦎',label:'Обитатели',desc:'Мбуна с яркой окраской охраняют свою территорию'},{svgKey:'4_2',emoji:'🏝️',label:'Вид сверху',desc:'Все камни и пещеры видны при верхнем освещении'},{svgKey:'4_3',emoji:'🪨',label:'В пещере',desc:'Внутри каменной пещеры с цихлидами'}] },
+        { id: 5, title: 'Мини-нано', volume: '20л', type: 'Пресноводный', emoji: '🫧', tags: ['нано', 'пресноводный', 'новичкам'], views: [{svgKey:'5_0',emoji:'🫧',label:'Общий вид',desc:'Компактный травник с креветками и мхами'},{svgKey:'5_1',emoji:'🦐',label:'Креветки',desc:'Красные кристаллы пасутся на листьях яванского мха'},{svgKey:'5_2',emoji:'💎',label:'Макро',desc:'Крупный план мелких растений и мха'},{svgKey:'5_3',emoji:'🫧',label:'Миниатюра',desc:'Весь миниатюрный мир в малом объёме'}] },
+        { id: 6, title: 'Псевдоморе', volume: '120л', type: 'Псевдоморе', emoji: '🦀', tags: ['псевдоморе', 'цихлиды', 'африка'], views: [{svgKey:'6_0',emoji:'🦀',label:'Панорама',desc:'Голубое освещение имитирует подводный риф'},{svgKey:'6_1',emoji:'🏔️',label:'Декорации',desc:'Коралловые камни и ракушки в пресной воде'},{svgKey:'6_2',emoji:'🐟',label:'Население',desc:'Цихлиды озера Малави на фоне белого песка'}] },
+        { id: 7, title: 'Терапевтический', volume: '60л', type: 'Пресноводный', emoji: '🌸', tags: ['креветки', 'растения', 'мирный'], views: [{svgKey:'7_0',emoji:'🌸',label:'Общий вид',desc:'Мягкое освещение, стая неонов и креветки'},{svgKey:'7_1',emoji:'✨',label:'Неоны',desc:'Голубые и красные вспышки в толще воды'},{svgKey:'7_2',emoji:'🌿',label:'Растительность',desc:'Густые заросли валлиснерии и роталы'},{svgKey:'7_3',emoji:'🌸',label:'Мшистый угол',desc:'Тихий уголок с яванским мхом'}] },
+        { id: 8, title: 'Морской гигант', volume: '800л', type: 'Морской', emoji: '🐋', tags: ['морской', 'большой', 'риф'], views: [{svgKey:'8_0',emoji:'🐋',label:'Вся панорама',desc:'Огромный риф длиной 2 метра с крупными рыбами'},{svgKey:'8_1',emoji:'🦈',label:'Акула',desc:'Силуэт акулы в открытой воде'},{svgKey:'8_2',emoji:'🪸',label:'Коралловый сад',desc:'Сотни видов кораллов от зелёных до фиолетовых'},{svgKey:'8_3',emoji:'🐋',label:'Скат',desc:'Морской скат парит над рифом'}] }
       ],
       faq: [
         { q: 'Сколько литров нужно для начинающего?', a: 'Оптимальный объём — 80–150 литров. В маленьких аквариумах сложнее поддерживать стабильные параметры.' },
@@ -79,6 +79,348 @@ document.addEventListener('DOMContentLoaded', () => {
       contacts: { email: 'hello@podvodnie.ru', socials: [{ name: 'VK', icon: '📘', url: '#' }, { name: 'Telegram', icon: '✈️', url: '#' }, { name: 'YouTube', icon: '▶️', url: '#' }, { name: 'Instagram', icon: '📸', url: '#' }] }
     };
   }
+
+  // ==============================================
+  // AQUARIUM VIEW SVG SCENES
+  // ==============================================
+  const aquariumViews = {
+    '1_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a1_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#08335c"/><stop offset="0.5" stop-color="#0f5a8a"/><stop offset="1" stop-color="#1a7a9a"/></linearGradient><linearGradient id="a1_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9af7b"/><stop offset="1" stop-color="#8b7355"/></linearGradient><radialGradient id="a1_v0_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.45)"/></radialGradient><linearGradient id="a1_v0_ray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.12)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a1_v0_bg)"/>
+<polygon points="30,0 70,0 160,160 80,160" fill="url(#a1_v0_ray)" opacity="0.5"/><polygon points="140,0 180,0 230,160 180,160" fill="url(#a1_v0_ray)" opacity="0.35"/>
+<rect x="0" y="132" width="240" height="28" fill="url(#a1_v0_sd)" rx="3"/>
+<path d="M10 132 Q30 118 60 126 Q90 115 120 128 Q150 116 180 126 Q210 118 230 130 L230 160 L10 160Z" fill="#a08555" opacity="0.5"/>
+<path d="M55 120 L62 75 L67 75 L60 120Z" fill="#e8735a"/><path d="M70 118 L78 65 L83 65 L75 118Z" fill="#e8735a"/><path d="M68 120 L72 85 L76 85 L72 120Z" fill="#f0a050"/>
+<path d="M130 115 L138 70 L143 70 L135 115Z" fill="#d06080"/><path d="M145 112 L152 60 L157 60 L150 112Z" fill="#d06080"/><path d="M140 114 L145 80 L149 80 L144 114Z" fill="#c040a0"/>
+<path d="M180 120 L184 90 L188 90 L184 120Z" fill="#f0a050"/><path d="M190 118 L196 80 L200 80 L194 118Z" fill="#e8735a"/>
+<ellipse cx="95" cy="100" rx="6" ry="3" fill="#ff6b35"/><ellipse cx="105" cy="94" rx="5" ry="2.5" fill="#4fc3f7"/><ellipse cx="88" cy="106" rx="4" ry="2" fill="#ffeb3b"/>
+<ellipse cx="160" cy="90" rx="5" ry="2.5" fill="#e040fb"/><ellipse cx="168" cy="85" rx="4" ry="2" fill="#ff6b35"/>
+<circle cx="35" cy="45" r="2" fill="rgba(255,255,255,0.35)"/><circle cx="90" cy="35" r="1.5" fill="rgba(255,255,255,0.25)"/><circle cx="145" cy="55" r="2.5" fill="rgba(255,255,255,0.3)"/><circle cx="200" cy="40" r="2" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a1_v0_vg)"/>
+</svg>`,
+    '1_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a1_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a2d50"/><stop offset="0.4" stop-color="#0e4a73"/><stop offset="1" stop-color="#16688a"/></linearGradient><radialGradient id="a1_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient><linearGradient id="a1_v1_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.15)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a1_v1_bg)"/>
+<polygon points="60,0 110,0 200,160 130,160" fill="url(#a1_v1_ray)" opacity="0.4"/>
+<path d="M0 135 Q20 120 40 130 Q60 110 80 125 Q100 108 120 120 Q140 110 160 125 Q180 115 200 122 Q220 108 240 120 L240 160 L0 160Z" fill="#c9af7b"/>
+<path d="M30 125 Q40 100 50 120" stroke="#e8735a" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M45 120 Q55 90 65 115" stroke="#d06080" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M80 118 Q90 85 100 112" stroke="#f0a050" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M95 112 Q105 75 115 108" stroke="#e040fb" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M140 120 Q150 95 160 116" stroke="#e8735a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M155 115 Q165 80 175 110" stroke="#4fc3f7" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="60" cy="105" r="3" fill="#ffeb3b"/><circle cx="110" cy="100" r="2.5" fill="#4fc3f7"/><circle cx="170" cy="95" r="3" fill="#ff6b35"/>
+<circle cx="25" cy="50" r="1.5" fill="rgba(255,255,255,0.3)"/><circle cx="120" cy="60" r="2" fill="rgba(255,255,255,0.25)"/><circle cx="190" cy="40" r="1.8" fill="rgba(255,255,255,0.3)"/>
+<rect width="240" height="160" fill="url(#a1_v1_vg)"/>
+</svg>`,
+    '1_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a1_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#072a4a"/><stop offset="1" stop-color="#0f5a8a"/></linearGradient><radialGradient id="a1_v2_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a1_v2_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a1_v2_bg)"/>
+<polygon points="20,0 50,0 150,160 90,160" fill="url(#a1_v2_ray)" opacity="0.4"/><polygon points="120,0 150,0 220,160 180,160" fill="url(#a1_v2_ray)" opacity="0.3"/>
+<rect x="0" y="145" width="240" height="15" fill="#1a5a7a" rx="2"/>
+<ellipse cx="70" cy="80" rx="4" ry="2" fill="#4fc3f7"/><ellipse cx="80" cy="76" rx="4" ry="2" fill="#4fc3f7"/><ellipse cx="90" cy="82" rx="4" ry="2" fill="#4fc3f7"/><ellipse cx="60" cy="78" rx="3.5" ry="1.8" fill="#4fc3f7"/><ellipse cx="100" cy="80" rx="3.5" ry="1.8" fill="#4fc3f7"/>
+<ellipse cx="75" cy="80" rx="3" ry="1.5" fill="#ff6b35"/><ellipse cx="85" cy="78" rx="3" ry="1.5" fill="#ffeb3b"/><ellipse cx="95" cy="81" rx="3" ry="1.5" fill="#ff6b35"/>
+<ellipse cx="150" cy="100" rx="5" ry="2.5" fill="#4fc3f7"/><ellipse cx="162" cy="96" rx="4" ry="2" fill="#4fc3f7"/><ellipse cx="140" cy="102" rx="4" ry="2" fill="#4fc3f7"/><ellipse cx="170" cy="98" rx="4" ry="2" fill="#4fc3f7"/>
+<ellipse cx="200" cy="60" rx="4" ry="2" fill="#e040fb"/><ellipse cx="210" cy="58" rx="3.5" ry="1.8" fill="#ff6b35"/>
+<circle cx="40" cy="50" r="2" fill="rgba(255,255,255,0.3)"/><circle cx="130" cy="45" r="1.8" fill="rgba(255,255,255,0.25)"/><circle cx="180" cy="55" r="2.2" fill="rgba(255,255,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a1_v2_vg)"/>
+</svg>`,
+    '1_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a1_v3_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3560"/><stop offset="1" stop-color="#0f5080"/></linearGradient><radialGradient id="a1_v3_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a1_v3_bg)"/>
+<ellipse cx="100" cy="80" rx="50" ry="40" fill="#1a5a7a" opacity="0.5"/><ellipse cx="160" cy="90" rx="40" ry="35" fill="#1a5a7a" opacity="0.4"/><ellipse cx="50" cy="70" rx="35" ry="30" fill="#1a5a7a" opacity="0.45"/>
+<ellipse cx="100" cy="80" rx="35" ry="28" fill="#b8965a" opacity="0.6"/><ellipse cx="160" cy="90" rx="25" ry="22" fill="#b8965a" opacity="0.5"/><ellipse cx="50" cy="70" rx="22" ry="18" fill="#b8965a" opacity="0.55"/>
+<circle cx="100" cy="80" r="12" fill="#e8735a" opacity="0.7"/><circle cx="120" cy="75" r="8" fill="#d06080" opacity="0.7"/><circle cx="85" cy="88" r="6" fill="#f0a050" opacity="0.7"/>
+<circle cx="160" cy="90" r="10" fill="#e040fb" opacity="0.6"/><circle cx="170" cy="82" r="7" fill="#4fc3f7" opacity="0.6"/>
+<circle cx="50" cy="70" r="9" fill="#f0a050" opacity="0.65"/><circle cx="42" cy="65" r="5" fill="#e8735a" opacity="0.65"/>
+<ellipse cx="140" cy="60" rx="4" ry="2.5" fill="#4fc3f7"/><ellipse cx="180" cy="70" rx="3.5" ry="2" fill="#ff6b35"/><ellipse cx="70" cy="55" rx="3" ry="1.8" fill="#ffeb3b"/>
+<circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.25)"/><circle cx="150" cy="25" r="2" fill="rgba(255,255,255,0.2)"/><circle cx="200" cy="40" r="1.8" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a1_v3_vg)"/>
+</svg>`,
+    '2_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a2_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1e14"/><stop offset="0.5" stop-color="#3d2b1f"/><stop offset="1" stop-color="#5c4a3a"/></linearGradient><linearGradient id="a2_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a3a2a"/><stop offset="1" stop-color="#2a1e14"/></linearGradient><radialGradient id="a2_v0_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a2_v0_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(200,180,150,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a2_v0_bg)"/>
+<polygon points="50,0 90,0 180,160 110,160" fill="url(#a2_v0_ray)" opacity="0.3"/>
+<rect x="0" y="130" width="240" height="30" fill="url(#a2_v0_sd)" rx="3"/>
+<path d="M60 128 L40 90 Q50 60 70 85 L80 128Z" fill="#5c3a1e"/><path d="M120 130 L110 80 Q100 50 130 70 L150 130Z" fill="#4a2e1a"/><path d="M180 128 L175 90 Q180 60 195 80 L200 128Z" fill="#5c3a1e"/>
+<path d="M20 125 Q40 70 60 125" stroke="#2d5c3a" stroke-width="3" fill="none"/><path d="M30 125 Q50 60 70 125" stroke="#3a7a4a" stroke-width="2.5" fill="none"/>
+<path d="M140 125 Q160 55 180 125" stroke="#2d5c3a" stroke-width="3" fill="none"/><path d="M155 125 Q175 50 195 125" stroke="#3a7a4a" stroke-width="2.5" fill="none"/>
+<ellipse cx="100" cy="100" rx="5" ry="3" fill="#6a5a4a"/><ellipse cx="160" cy="110" rx="4" ry="2.5" fill="#6a5a4a"/>
+<circle cx="40" cy="50" r="2" fill="rgba(200,180,150,0.2)"/><circle cx="110" cy="65" r="1.5" fill="rgba(200,180,150,0.15)"/><circle cx="200" cy="55" r="1.8" fill="rgba(200,180,150,0.2)"/>
+<rect width="240" height="160" fill="url(#a2_v0_vg)"/>
+</svg>`,
+    '2_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a2_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1e14"/><stop offset="0.5" stop-color="#4a3426"/><stop offset="1" stop-color="#5c4a3a"/></linearGradient><radialGradient id="a2_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient><linearGradient id="a2_v1_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(200,180,150,0.12)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a2_v1_bg)"/>
+<polygon points="70,0 110,0 190,160 140,160" fill="url(#a2_v1_ray)" opacity="0.35"/>
+<path d="M80 160 L60 60 Q80 40 100 55 L120 160Z" fill="#5c3a1e"/><path d="M100 160 L90 70 Q110 50 130 65 L160 160Z" fill="#4a2e1a"/>
+<path d="M65 70 Q75 55 95 60" stroke="#3a7a4a" stroke-width="3" fill="none"/><path d="M60 80 Q70 65 90 70" stroke="#2d5c3a" stroke-width="2.5" fill="none"/>
+<path d="M95 68 Q110 52 130 60" stroke="#3a7a4a" stroke-width="3" fill="none"/><path d="M90 78 Q105 62 125 70" stroke="#2d5c3a" stroke-width="2.5" fill="none"/>
+<ellipse cx="150" cy="100" rx="4" ry="2.5" fill="#6a5a4a"/><ellipse cx="170" cy="110" rx="3.5" ry="2" fill="#6a5a4a"/>
+<circle cx="40" cy="40" r="1.5" fill="rgba(200,180,150,0.2)"/><circle cx="130" cy="55" r="2" fill="rgba(200,180,150,0.15)"/><circle cx="190" cy="60" r="1.5" fill="rgba(200,180,150,0.2)"/>
+<rect width="240" height="160" fill="url(#a2_v1_vg)"/>
+</svg>`,
+    '2_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a2_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a120a"/><stop offset="0.3" stop-color="#2a1e14"/><stop offset="1" stop-color="#4a3a2a"/></linearGradient><radialGradient id="a2_v2_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a2_v2_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(200,180,150,0.08)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a2_v2_bg)"/>
+<polygon points="30,0 60,0 140,160 80,160" fill="url(#a2_v2_ray)" opacity="0.25"/>
+<rect x="0" y="135" width="240" height="25" fill="#3a2a1a"/>
+<ellipse cx="50" cy="138" rx="8" ry="2" fill="#5c4a3a" opacity="0.6"/><ellipse cx="120" cy="142" rx="10" ry="3" fill="#5c4a3a" opacity="0.5"/><ellipse cx="180" cy="140" rx="6" ry="2" fill="#5c4a3a" opacity="0.6"/>
+<path d="M30 135 L35 120 Q40 115 42 125 L38 135Z" fill="#4a3a2a"/><path d="M100 138 L105 118 Q110 112 112 125 L108 138Z" fill="#4a3a2a"/>
+<ellipse cx="80" cy="115" rx="5" ry="3" fill="#6a5a4a"/><ellipse cx="160" cy="120" rx="4" ry="2.5" fill="#6a5a4a"/>
+<circle cx="60" cy="50" r="1.5" fill="rgba(200,180,150,0.15)"/><circle cx="150" cy="65" r="2" fill="rgba(200,180,150,0.1)"/>
+<rect width="240" height="160" fill="url(#a2_v2_vg)"/>
+</svg>`,
+    '2_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a2_v3_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1e14"/><stop offset="0.4" stop-color="#3d2b1f"/><stop offset="1" stop-color="#5c4a3a"/></linearGradient><radialGradient id="a2_v3_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.45)"/></radialGradient><linearGradient id="a2_v3_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(200,180,150,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a2_v3_bg)"/>
+<polygon points="40,0 80,0 170,160 100,160" fill="url(#a2_v3_ray)" opacity="0.3"/>
+<rect x="0" y="135" width="240" height="25" fill="#3a2a1a" rx="2"/>
+<path d="M30 130 Q50 50 70 130" stroke="#2d5c3a" stroke-width="4" fill="none" opacity="0.8"/><path d="M55 130 Q75 40 95 130" stroke="#3a7a4a" stroke-width="3.5" fill="none" opacity="0.8"/><path d="M80 130 Q100 45 120 130" stroke="#2d5c3a" stroke-width="4" fill="none" opacity="0.8"/>
+<path d="M140 130 Q160 55 180 130" stroke="#3a7a4a" stroke-width="3.5" fill="none" opacity="0.8"/><path d="M165 130 Q185 40 205 130" stroke="#2d5c3a" stroke-width="4" fill="none" opacity="0.8"/>
+<polygon points="100,82 125,30 150,82" fill="#c0b0a0" stroke="#8a7a6a" stroke-width="0.8"/><line x1="125" y1="30" x2="125" y2="82" stroke="#8a7a6a" stroke-width="1"/><line x1="105" y1="60" x2="145" y2="60" stroke="#8a7a6a" stroke-width="0.8"/>
+<circle cx="125" cy="56" r="3.5" fill="#333"/><circle cx="124" cy="55" r="1.5" fill="#fff"/>
+<circle cx="60" cy="45" r="2" fill="rgba(200,180,150,0.2)"/><circle cx="160" cy="50" r="1.5" fill="rgba(200,180,150,0.15)"/>
+<rect width="240" height="160" fill="url(#a2_v3_vg)"/>
+</svg>`,
+    '3_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a3_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8e8d8"/><stop offset="0.3" stop-color="#a8d8c0"/><stop offset="1" stop-color="#6a9a7a"/></linearGradient><linearGradient id="a3_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a7a5a"/><stop offset="1" stop-color="#5a4a3a"/></linearGradient><radialGradient id="a3_v0_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.3)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a3_v0_bg)"/>
+<rect x="0" y="130" width="240" height="30" fill="url(#a3_v0_sd)" rx="2"/>
+<path d="M0 130 Q40 110 80 125 Q120 108 160 122 Q200 112 240 125 L240 160 L0 160Z" fill="#6a5a4a" opacity="0.4"/>
+<path d="M10 125 Q20 95 40 120 Q55 90 70 118 Q85 88 100 115 Q120 85 140 118 Q160 88 180 115 L180 130 L10 130Z" fill="#3a8a5a" opacity="0.8"/>
+<path d="M60 118 Q70 70 90 115 Q105 65 120 112 Q135 60 150 110 L150 125 L60 125Z" fill="#2a7a4a" opacity="0.8"/>
+<path d="M110 108 Q120 40 140 105 Q155 35 170 100 L170 120 L110 120Z" fill="#1a6a3a" opacity="0.8"/>
+<path d="M0 125 Q20 80 40 120" stroke="#4a9a6a" stroke-width="2" fill="none"/><path d="M180 125 Q200 75 220 120" stroke="#4a9a6a" stroke-width="2" fill="none"/>
+<ellipse cx="50" cy="95" rx="3" ry="1.5" fill="#ff6b35"/><ellipse cx="150" cy="85" rx="3" ry="1.5" fill="#4fc3f7"/>
+<circle cx="30" cy="40" r="1.5" fill="rgba(255,255,255,0.3)"/><circle cx="120" cy="50" r="2" fill="rgba(255,255,255,0.25)"/><circle cx="200" cy="45" r="1.5" fill="rgba(255,255,255,0.3)"/>
+<rect width="240" height="160" fill="url(#a3_v0_vg)"/>
+</svg>`,
+    '3_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a3_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8e0c8"/><stop offset="1" stop-color="#5a9a6a"/></linearGradient><radialGradient id="a3_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.25)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a3_v1_bg)"/>
+<rect x="0" y="135" width="240" height="25" fill="#7a6a5a" rx="2"/>
+<ellipse cx="40" cy="132" rx="30" ry="4" fill="#4a9a5a" opacity="0.9"/><ellipse cx="120" cy="134" rx="40" ry="5" fill="#3a8a4a" opacity="0.9"/><ellipse cx="200" cy="133" rx="35" ry="4" fill="#4a9a5a" opacity="0.9"/>
+<circle cx="50" cy="130" r="2" fill="#7aba7a"/><circle cx="80" cy="132" r="1.5" fill="#7aba7a"/><circle cx="110" cy="131" r="2.5" fill="#7aba7a"/><circle cx="150" cy="133" r="2" fill="#7aba7a"/><circle cx="180" cy="130" r="1.8" fill="#7aba7a"/>
+<ellipse cx="60" cy="100" rx="3" ry="1.5" fill="#ff6b35"/><ellipse cx="150" cy="90" rx="2.5" ry="1.2" fill="#4fc3f7"/>
+<circle cx="30" cy="50" r="2" fill="rgba(255,255,255,0.25)"/><circle cx="120" cy="60" r="1.5" fill="rgba(255,255,255,0.2)"/><circle cx="200" cy="55" r="2" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a3_v1_vg)"/>
+</svg>`,
+    '3_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a3_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e8d8"/><stop offset="0.3" stop-color="#a0d0b0"/><stop offset="1" stop-color="#5a8a6a"/></linearGradient><radialGradient id="a3_v2_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.3)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a3_v2_bg)"/>
+<rect x="0" y="140" width="240" height="20" fill="#6a5a4a" rx="2"/>
+<path d="M30 135 Q45 50 55 135" stroke="#3a8a5a" stroke-width="3" fill="none"/><path d="M50 135 Q65 40 75 135" stroke="#2a7a4a" stroke-width="3" fill="none"/>
+<path d="M100 135 Q115 30 130 135" stroke="#3a8a5a" stroke-width="3.5" fill="none"/><path d="M120 135 Q135 25 150 135" stroke="#4a9a6a" stroke-width="3" fill="none"/>
+<path d="M170 135 Q185 35 200 135" stroke="#2a7a4a" stroke-width="3" fill="none"/><path d="M190 135 Q205 45 215 135" stroke="#3a8a5a" stroke-width="2.5" fill="none"/>
+<circle cx="55" cy="35" r="3" fill="#ff6b35" opacity="0.8"/><circle cx="130" cy="25" r="3.5" fill="#e040fb" opacity="0.8"/><circle cx="200" cy="30" r="2.5" fill="#ff6b35" opacity="0.8"/>
+<ellipse cx="80" cy="100" rx="3" ry="1.5" fill="#ff6b35"/><ellipse cx="160" cy="90" rx="3" ry="1.5" fill="#4fc3f7"/>
+<circle cx="40" cy="50" r="1.5" fill="rgba(255,255,255,0.3)"/><circle cx="160" cy="55" r="2" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a3_v2_vg)"/>
+</svg>`,
+    '4_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a4_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a5276"/><stop offset="0.5" stop-color="#2471a3"/><stop offset="1" stop-color="#2e86c1"/></linearGradient><linearGradient id="a4_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8a88a"/><stop offset="1" stop-color="#8a7a6a"/></linearGradient><radialGradient id="a4_v0_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient><linearGradient id="a4_v0_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.12)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a4_v0_bg)"/>
+<polygon points="30,0 70,0 160,160 90,160" fill="url(#a4_v0_ray)" opacity="0.4"/>
+<rect x="0" y="130" width="240" height="30" fill="url(#a4_v0_sd)" rx="2"/>
+<path d="M70 125 L40 60 Q50 40 80 55 L100 125Z" fill="#6a5a4a"/><path d="M100 128 L80 50 Q90 30 120 45 L140 128Z" fill="#5a4a3a"/><path d="M140 125 L120 55 Q130 35 160 50 L180 125Z" fill="#6a5a4a"/>
+<path d="M30 122 Q40 90 55 118" stroke="#8a7a6a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M180 122 Q195 85 210 118" stroke="#8a7a6a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<ellipse cx="85" cy="95" rx="4" ry="3" fill="#ffeb3b"/><ellipse cx="155" cy="90" rx="4" ry="3" fill="#4fc3f7"/><ellipse cx="95" cy="105" rx="3.5" ry="2.5" fill="#ff6b35"/>
+<circle cx="40" cy="45" r="2" fill="rgba(255,255,255,0.3)"/><circle cx="140" cy="50" r="1.8" fill="rgba(255,255,255,0.25)"/><circle cx="200" cy="60" r="2" fill="rgba(255,255,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a4_v0_vg)"/>
+</svg>`,
+    '4_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a4_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#154a6e"/><stop offset="0.5" stop-color="#1f6a96"/><stop offset="1" stop-color="#2a86b6"/></linearGradient><radialGradient id="a4_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a4_v1_bg)"/>
+<path d="M40 160 L30 50 Q50 30 80 45 L110 160Z" fill="#6a5a4a"/><path d="M100 160 L80 55 Q100 35 130 50 L170 160Z" fill="#5a4a3a"/><path d="M150 160 L140 60 Q160 40 190 55 L210 160Z" fill="#6a5a4a"/>
+<path d="M50 60 Q45 45 55 50" fill="none" stroke="#3a2a1a" stroke-width="0.8"/><path d="M95 55 Q90 40 100 45" fill="none" stroke="#3a2a1a" stroke-width="0.8"/>
+<ellipse cx="90" cy="90" rx="5" ry="3" fill="#ffeb3b"/><ellipse cx="100" cy="85" rx="4.5" ry="2.5" fill="#4fc3f7"/>
+<ellipse cx="160" cy="80" rx="4" ry="3" fill="#4fc3f7"/><ellipse cx="170" cy="75" rx="3.5" ry="2.5" fill="#ffeb3b"/>
+<circle cx="50" cy="50" r="1.5" fill="rgba(255,255,255,0.25)"/><circle cx="130" cy="45" r="2" fill="rgba(255,255,255,0.2)"/><circle cx="190" cy="55" r="1.8" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a4_v1_vg)"/>
+</svg>`,
+    '4_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a4_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a5a7a"/><stop offset="1" stop-color="#2a86b6"/></linearGradient><radialGradient id="a4_v2_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.35)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a4_v2_bg)"/>
+<ellipse cx="80" cy="85" rx="40" ry="35" fill="#6a5a4a" opacity="0.7"/><ellipse cx="170" cy="75" rx="35" ry="30" fill="#5a4a3a" opacity="0.7"/>
+<ellipse cx="80" cy="85" rx="25" ry="20" fill="#4a3a2a" opacity="0.5"/><ellipse cx="170" cy="75" rx="20" ry="18" fill="#4a3a2a" opacity="0.5"/>
+<ellipse cx="80" cy="85" rx="10" ry="8" fill="#1a5276" opacity="0.4"/><ellipse cx="170" cy="75" rx="8" ry="7" fill="#1a5276" opacity="0.4"/>
+<ellipse cx="50" cy="50" rx="3" ry="2" fill="#ffeb3b"/><ellipse cx="155" cy="65" rx="3" ry="2" fill="#4fc3f7"/>
+<circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.2)"/><circle cx="120" cy="40" r="2" fill="rgba(255,255,255,0.2)"/><circle cx="210" cy="35" r="1.5" fill="rgba(255,255,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a4_v2_vg)"/>
+</svg>`,
+    '4_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="a4_v3_bg"><stop offset="0" stop-color="#0a1a2a"/><stop offset="1" stop-color="#050e14"/></radialGradient><radialGradient id="a4_v3_lgt"><stop offset="0" stop-color="rgba(200,220,255,0.12)"/><stop offset="1" stop-color="transparent"/></radialGradient><radialGradient id="a4_v3_vg"><stop offset="0.5" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.6)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a4_v3_bg)"/>
+<ellipse cx="60" cy="60" rx="80" ry="90" fill="url(#a4_v3_lgt)"/>
+<path d="M0 160 L20 40 Q40 20 60 35 L80 160Z" fill="#3a2a1a" opacity="0.6"/><path d="M70 160 L60 50 Q80 30 100 45 L120 160Z" fill="#2a1e14" opacity="0.6"/>
+<ellipse cx="100" cy="90" rx="4" ry="3" fill="#4fc3f7" opacity="0.7"/><ellipse cx="110" cy="95" rx="3.5" ry="2.5" fill="#ffeb3b" opacity="0.7"/>
+<circle cx="40" cy="50" r="1.5" fill="rgba(200,220,255,0.15)"/><circle cx="120" cy="70" r="2" fill="rgba(200,220,255,0.1)"/>
+<rect width="240" height="160" fill="url(#a4_v3_vg)"/>
+</svg>`,
+    '5_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a5_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8e0f0"/><stop offset="0.5" stop-color="#d0f0f8"/><stop offset="1" stop-color="#e0f8ff"/></linearGradient><linearGradient id="a5_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a8a7a"/><stop offset="1" stop-color="#5a5a4a"/></linearGradient><radialGradient id="a5_v0_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.25)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a5_v0_bg)"/>
+<rect x="0" y="135" width="240" height="25" fill="url(#a5_v0_sd)" rx="2"/>
+<ellipse cx="100" cy="125" rx="25" ry="8" fill="#3a7a4a"/><ellipse cx="170" cy="128" rx="15" ry="6" fill="#3a7a4a"/>
+<path d="M50 130 Q55 100 65 125" stroke="#4a8a5a" stroke-width="3" fill="none"/><path d="M80 128 Q85 90 95 122" stroke="#3a7a4a" stroke-width="2.5" fill="none"/>
+<path d="M120 125 Q130 95 140 120" stroke="#4a8a5a" stroke-width="2.5" fill="none"/>
+<ellipse cx="90" cy="100" rx="3" ry="2" fill="#ff6b35"/><ellipse cx="160" cy="95" rx="2.5" ry="1.5" fill="#e040fb"/>
+<circle cx="40" cy="40" r="1.5" fill="rgba(255,255,255,0.25)"/><circle cx="130" cy="45" r="2" fill="rgba(255,255,255,0.2)"/><circle cx="190" cy="50" r="1.5" fill="rgba(255,255,255,0.25)"/>
+<rect width="240" height="160" fill="url(#a5_v0_vg)"/>
+</svg>`,
+    '5_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a5_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a0d0e0"/><stop offset="1" stop-color="#c0e8f0"/></linearGradient><radialGradient id="a5_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.2)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a5_v1_bg)"/>
+<ellipse cx="120" cy="135" rx="80" ry="15" fill="#3a7a4a" opacity="0.8"/>
+<path d="M60 120 Q65 90 75 115 Q80 85 90 110 Q95 80 105 108" stroke="#4a8a5a" stroke-width="2.5" fill="none"/><path d="M140 120 Q145 95 155 115 Q160 88 170 110 Q175 82 185 108" stroke="#4a8a5a" stroke-width="2.5" fill="none"/>
+<ellipse cx="110" cy="90" rx="6" ry="3" fill="#e53935"/><ellipse cx="118" cy="87" rx="5" ry="2.5" fill="#e53935"/>
+<ellipse cx="110" cy="90" rx="2" ry="1.5" fill="#ffcdd2"/><ellipse cx="118" cy="87" rx="2" ry="1.5" fill="#ffcdd2"/>
+<ellipse cx="160" cy="95" rx="5" ry="2.5" fill="#e53935"/><ellipse cx="167" cy="92" rx="4" ry="2" fill="#e53935"/>
+<circle cx="40" cy="50" r="1.5" fill="rgba(255,255,255,0.2)"/><circle cx="150" cy="45" r="2" fill="rgba(255,255,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a5_v1_vg)"/>
+</svg>`,
+    '5_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a5_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8e0e8"/><stop offset="1" stop-color="#d0f0f0"/></linearGradient><radialGradient id="a5_v2_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.2)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a5_v2_bg)"/>
+<ellipse cx="120" cy="140" rx="100" ry="20" fill="#5a8a5a" opacity="0.6"/>
+<path d="M60 100 Q65 60 80 95 Q90 55 100 90 Q110 50 120 85" stroke="#3a7a4a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M150 105 Q155 70 170 100 Q180 65 190 95 Q200 60 210 90" stroke="#4a8a5a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<circle cx="80" cy="80" r="2" fill="#7aba7a"/><circle cx="100" cy="75" r="1.5" fill="#7aba7a"/><circle cx="120" cy="70" r="2.5" fill="#7aba7a"/>
+<ellipse cx="180" cy="85" rx="2.5" ry="1.5" fill="#ff6b35"/>
+<circle cx="50" cy="40" r="1.5" fill="rgba(255,255,255,0.2)"/><circle cx="160" cy="45" r="2" fill="rgba(255,255,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a5_v2_vg)"/>
+</svg>`,
+    '5_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a5_v3_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c0e8f0"/><stop offset="0.5" stop-color="#d8f0f8"/><stop offset="1" stop-color="#e8f8ff"/></linearGradient><radialGradient id="a5_v3_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.2)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a5_v3_bg)"/>
+<rect x="0" y="138" width="240" height="22" fill="#7a7a6a" rx="2"/>
+<ellipse cx="80" cy="130" rx="20" ry="6" fill="#3a7a4a"/><ellipse cx="160" cy="132" rx="15" ry="5" fill="#4a8a5a"/>
+<path d="M50 128 Q55 100 65 124" stroke="#3a7a4a" stroke-width="2" fill="none"/><path d="M130 130 Q135 95 145 125" stroke="#4a8a5a" stroke-width="2" fill="none"/>
+<ellipse cx="100" cy="100" rx="3" ry="2" fill="#e53935"/><ellipse cx="155" cy="95" rx="2.5" ry="1.5" fill="#ff6b35"/>
+<circle cx="40" cy="45" r="1.5" fill="rgba(255,255,255,0.2)"/><circle cx="150" cy="40" r="2" fill="rgba(255,255,255,0.15)"/><circle cx="200" cy="50" r="1.5" fill="rgba(255,255,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a5_v3_vg)"/>
+</svg>`,
+    '6_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a6_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a4a6a"/><stop offset="0.4" stop-color="#0d6a8e"/><stop offset="1" stop-color="#1a8aaa"/></linearGradient><linearGradient id="a6_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8e0d0"/><stop offset="1" stop-color="#c8c0b0"/></linearGradient><radialGradient id="a6_v0_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.35)"/></radialGradient><linearGradient id="a6_v0_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(100,200,255,0.15)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a6_v0_bg)"/>
+<polygon points="20,0 60,0 160,160 90,160" fill="url(#a6_v0_ray)" opacity="0.5"/><polygon points="120,0 160,0 220,160 170,160" fill="url(#a6_v0_ray)" opacity="0.35"/>
+<rect x="0" y="135" width="240" height="25" fill="url(#a6_v0_sd)" rx="2"/>
+<path d="M50 130 L40 70 Q50 50 70 65 L90 130Z" fill="#6a5a4a"/><path d="M130 130 L120 60 Q140 40 160 55 L180 130Z" fill="#5a4a3a"/>
+<ellipse cx="100" cy="100" rx="4" ry="2.5" fill="#ffeb3b"/><ellipse cx="160" cy="95" rx="4" ry="2.5" fill="#4fc3f7"/><ellipse cx="110" cy="108" rx="3.5" ry="2" fill="#e040fb"/>
+<circle cx="40" cy="50" r="2" fill="rgba(100,200,255,0.25)"/><circle cx="140" cy="55" r="1.8" fill="rgba(100,200,255,0.2)"/><circle cx="200" cy="60" r="2" fill="rgba(100,200,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a6_v0_vg)"/>
+</svg>`,
+    '6_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a6_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a5272"/><stop offset="0.5" stop-color="#107a9a"/><stop offset="1" stop-color="#1a9aba"/></linearGradient><radialGradient id="a6_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.35)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a6_v1_bg)"/>
+<rect x="0" y="140" width="240" height="20" fill="#e0d8c8" rx="2"/>
+<path d="M60 135 L40 65 Q50 45 70 60 L90 135Z" fill="#6a5a4a"/><path d="M100 135 L90 55 Q110 35 130 50 L150 135Z" fill="#5a4a3a"/>
+<path d="M140 135 L130 70 Q150 50 170 65 L190 135Z" fill="#6a5a4a"/>
+<ellipse cx="80" cy="100" rx="3" ry="2" fill="#ffeb3b"/><ellipse cx="160" cy="95" rx="3" ry="2" fill="#4fc3f7"/>
+<circle cx="50" cy="50" r="1.5" fill="rgba(100,200,255,0.2)"/><circle cx="150" cy="45" r="2" fill="rgba(100,200,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a6_v1_vg)"/>
+</svg>`,
+    '6_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a6_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a4a6a"/><stop offset="0.4" stop-color="#0d6a8e"/><stop offset="1" stop-color="#1a8aaa"/></linearGradient><radialGradient id="a6_v2_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.35)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a6_v2_bg)"/>
+<rect x="0" y="138" width="240" height="22" fill="#e0d8c8" rx="2"/>
+<path d="M40 133 L30 80 Q40 65 55 75 L70 133Z" fill="#6a5a4a"/><path d="M160 133 L150 75 Q165 55 180 70 L195 133Z" fill="#5a4a3a"/>
+<ellipse cx="80" cy="100" rx="5" ry="3" fill="#ffeb3b"/><ellipse cx="90" cy="95" rx="4.5" ry="2.5" fill="#4fc3f7"/>
+<ellipse cx="140" cy="105" rx="5" ry="3" fill="#4fc3f7"/><ellipse cx="150" cy="100" rx="4.5" ry="2.5" fill="#ffeb3b"/>
+<ellipse cx="120" cy="90" rx="4" ry="2.5" fill="#e040fb"/>
+<circle cx="50" cy="50" r="2" fill="rgba(100,200,255,0.2)"/><circle cx="180" cy="55" r="1.8" fill="rgba(100,200,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a6_v2_vg)"/>
+</svg>`,
+    '7_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a7_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a6a5a"/><stop offset="0.4" stop-color="#4a7a6a"/><stop offset="1" stop-color="#5a8a7a"/></linearGradient><linearGradient id="a7_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a5a4a"/><stop offset="1" stop-color="#4a3a2a"/></linearGradient><radialGradient id="a7_v0_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.3)"/></radialGradient><linearGradient id="a7_v0_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,200,0.12)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a7_v0_bg)"/>
+<polygon points="40,0 80,0 170,160 100,160" fill="url(#a7_v0_ray)" opacity="0.4"/>
+<rect x="0" y="132" width="240" height="28" fill="url(#a7_v0_sd)" rx="2"/>
+<path d="M20 128 Q35 80 55 124 Q70 75 90 120 Q105 70 120 118 Q135 72 150 120 Q165 78 180 124 L180 135 L20 135Z" fill="#4a8a5a" opacity="0.7"/>
+<path d="M60 120 Q70 60 90 115 Q105 55 120 110 Q135 50 150 108 L150 125 L60 125Z" fill="#3a7a4a" opacity="0.7"/>
+<ellipse cx="100" cy="90" rx="3" ry="1.8" fill="#29b6f6"/><ellipse cx="150" cy="85" rx="3" ry="1.8" fill="#e53935"/>
+<circle cx="30" cy="45" r="1.5" fill="rgba(255,255,200,0.25)"/><circle cx="140" cy="50" r="2" fill="rgba(255,255,200,0.2)"/><circle cx="200" cy="55" r="1.5" fill="rgba(255,255,200,0.2)"/>
+<rect width="240" height="160" fill="url(#a7_v0_vg)"/>
+</svg>`,
+    '7_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a7_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a3a2a"/><stop offset="0.5" stop-color="#2a4a3a"/><stop offset="1" stop-color="#3a5a4a"/></linearGradient><radialGradient id="a7_v1_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient><linearGradient id="a7_v1_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(100,200,255,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a7_v1_bg)"/>
+<polygon points="30,0 70,0 180,160 100,160" fill="url(#a7_v1_ray)" opacity="0.35"/>
+<ellipse cx="90" cy="80" rx="4" ry="2.5" fill="#29b6f6"/><ellipse cx="100" cy="76" rx="4" ry="2.5" fill="#29b6f6"/><ellipse cx="110" cy="82" rx="4" ry="2.5" fill="#29b6f6"/><ellipse cx="80" cy="78" rx="3.5" ry="2" fill="#29b6f6"/><ellipse cx="120" cy="80" rx="3.5" ry="2" fill="#29b6f6"/>
+<ellipse cx="95" cy="80" rx="2" ry="1.5" fill="#e53935"/><ellipse cx="105" cy="78" rx="2" ry="1.5" fill="#e53935"/>
+<ellipse cx="160" cy="100" rx="3.5" ry="2" fill="#29b6f6"/><ellipse cx="170" cy="96" rx="3.5" ry="2" fill="#29b6f6"/><ellipse cx="150" cy="102" rx="3" ry="1.8" fill="#29b6f6"/>
+<circle cx="50" cy="45" r="1.5" fill="rgba(100,200,255,0.2)"/><circle cx="140" cy="55" r="2" fill="rgba(100,200,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a7_v1_vg)"/>
+</svg>`,
+    '7_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a7_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a5a4a"/><stop offset="0.4" stop-color="#3a6a5a"/><stop offset="1" stop-color="#5a8a7a"/></linearGradient><radialGradient id="a7_v2_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.3)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a7_v2_bg)"/>
+<rect x="0" y="140" width="240" height="20" fill="#5a4a3a" rx="2"/>
+<path d="M20 135 Q30 30 50 135" stroke="#3a7a4a" stroke-width="4" fill="none"/><path d="M40 135 Q55 25 70 135" stroke="#4a8a5a" stroke-width="3.5" fill="none"/>
+<path d="M80 135 Q95 35 110 135" stroke="#3a7a4a" stroke-width="4" fill="none"/><path d="M100 135 Q115 20 130 135" stroke="#2a6a3a" stroke-width="3.5" fill="none"/>
+<path d="M140 135 Q155 40 170 135" stroke="#4a8a5a" stroke-width="3.5" fill="none"/><path d="M160 135 Q175 30 190 135" stroke="#3a7a4a" stroke-width="4" fill="none"/><path d="M180 135 Q195 45 210 135" stroke="#2a6a3a" stroke-width="3" fill="none"/>
+<ellipse cx="80" cy="95" rx="2.5" ry="1.5" fill="#e53935"/><ellipse cx="150" cy="90" rx="2.5" ry="1.5" fill="#29b6f6"/>
+<circle cx="50" cy="50" r="1.5" fill="rgba(255,255,200,0.2)"/><circle cx="180" cy="55" r="2" fill="rgba(255,255,200,0.15)"/>
+<rect width="240" height="160" fill="url(#a7_v2_vg)"/>
+</svg>`,
+    '7_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a7_v3_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a5a4a"/><stop offset="0.5" stop-color="#4a7a6a"/><stop offset="1" stop-color="#5a8a7a"/></linearGradient><radialGradient id="a7_v3_vg"><stop offset="0.7" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.3)"/></radialGradient></defs>
+<rect width="240" height="160" fill="url(#a7_v3_bg)"/>
+<rect x="0" y="138" width="240" height="22" fill="#5a4a3a" rx="2"/>
+<ellipse cx="60" cy="130" rx="30" ry="10" fill="#3a7a4a"/><ellipse cx="160" cy="132" rx="25" ry="8" fill="#4a8a5a"/>
+<path d="M40 125 Q45 85 55 120 Q60 80 70 115" stroke="#4a8a5a" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M90 128 Q95 90 105 122 Q110 85 120 118" stroke="#3a7a4a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="80" cy="105" rx="3" ry="1.8" fill="#29b6f6"/><ellipse cx="130" cy="100" rx="2.5" ry="1.5" fill="#e53935"/>
+<circle cx="50" cy="45" r="1.5" fill="rgba(255,255,200,0.2)"/><circle cx="160" cy="50" r="2" fill="rgba(255,255,200,0.15)"/>
+<rect width="240" height="160" fill="url(#a7_v3_vg)"/>
+</svg>`,
+    '8_0': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a8_v0_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#051d33"/><stop offset="0.4" stop-color="#08335c"/><stop offset="1" stop-color="#0f5a8a"/></linearGradient><linearGradient id="a8_v0_sd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a7a5a"/><stop offset="1" stop-color="#5a4a3a"/></linearGradient><radialGradient id="a8_v0_vg"><stop offset="0.5" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a8_v0_ray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a8_v0_bg)"/>
+<polygon points="10,0 40,0 130,160 60,160" fill="url(#a8_v0_ray)" opacity="0.4"/><polygon points="100,0 130,0 210,160 160,160" fill="url(#a8_v0_ray)" opacity="0.3"/>
+<rect x="0" y="125" width="240" height="35" fill="url(#a8_v0_sd)" rx="3"/>
+<path d="M20 125 Q40 100 70 118 Q100 95 130 115 Q160 98 190 118 Q210 102 230 120 L230 160 L20 160Z" fill="#a08555" opacity="0.4"/>
+<path d="M50 115 L55 70 L60 70 L55 115Z" fill="#e8735a"/><path d="M65 112 L72 60 L77 60 L70 112Z" fill="#e8735a"/>
+<path d="M120 110 L128 65 L133 65 L125 110Z" fill="#d06080"/><path d="M135 108 L142 55 L147 55 L140 108Z" fill="#d06080"/><path d="M130 110 L136 75 L140 75 L134 110Z" fill="#f0a050"/>
+<path d="M180 115 L186 75 L190 75 L184 115Z" fill="#e040fb"/><path d="M170 118 L176 85 L180 85 L174 118Z" fill="#4fc3f7"/>
+<ellipse cx="100" cy="90" rx="6" ry="3" fill="#4fc3f7"/><ellipse cx="112" cy="85" rx="5" ry="2.5" fill="#ff6b35"/><ellipse cx="90" cy="95" rx="4" ry="2" fill="#e040fb"/>
+<ellipse cx="170" cy="85" rx="5" ry="3" fill="#ffeb3b"/><ellipse cx="180" cy="80" rx="4.5" ry="2.5" fill="#ff6b35"/>
+<circle cx="45" cy="40" r="2" fill="rgba(255,255,255,0.25)"/><circle cx="140" cy="45" r="2.5" fill="rgba(255,255,255,0.2)"/><circle cx="200" cy="50" r="2" fill="rgba(255,255,255,0.2)"/>
+<rect width="240" height="160" fill="url(#a8_v0_vg)"/>
+</svg>`,
+    '8_1': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a8_v1_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#041828"/><stop offset="0.5" stop-color="#072a4a"/><stop offset="1" stop-color="#0a3d6b"/></linearGradient><radialGradient id="a8_v1_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a8_v1_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(150,200,255,0.12)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a8_v1_bg)"/>
+<polygon points="50,0 90,0 200,160 130,160" fill="url(#a8_v1_ray)" opacity="0.4"/><polygon points="140,0 170,0 230,160 200,160" fill="url(#a8_v1_ray)" opacity="0.25"/>
+<path d="M90 60 L140 30 L180 60 L160 65 Q140 50 120 62 Z" fill="#1a2a3a" opacity="0.8"/>
+<path d="M140 30 L155 25 L145 38 L130 35Z" fill="#1a2a3a" opacity="0.7"/>
+<ellipse cx="140" cy="45" rx="3" ry="2" fill="#3a4a5a"/>
+<ellipse cx="160" cy="100" rx="4" ry="2.5" fill="#2a3a4a" opacity="0.6"/>
+<circle cx="50" cy="50" r="1.5" fill="rgba(150,200,255,0.2)"/><circle cx="180" cy="55" r="2" fill="rgba(150,200,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a8_v1_vg)"/>
+</svg>`,
+    '8_2': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a8_v2_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a2d50"/><stop offset="0.5" stop-color="#0f5080"/><stop offset="1" stop-color="#1a6a9a"/></linearGradient><radialGradient id="a8_v2_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.4)"/></radialGradient><linearGradient id="a8_v2_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a8_v2_bg)"/>
+<polygon points="60,0 100,0 190,160 130,160" fill="url(#a8_v2_ray)" opacity="0.35"/>
+<rect x="0" y="130" width="240" height="30" fill="#8a7a5a" rx="2"/>
+<path d="M40 125 L48 70 L53 70 L45 125Z" fill="#e040fb"/><path d="M55 122 L62 60 L67 60 L60 122Z" fill="#e040fb"/>
+<path d="M90 120 L98 65 L103 65 L95 120Z" fill="#4fc3f7"/><path d="M105 118 L112 55 L117 55 L110 118Z" fill="#4fc3f7"/>
+<path d="M140 122 L148 70 L153 70 L145 122Z" fill="#f0a050"/><path d="M155 118 L162 58 L167 58 L160 118Z" fill="#f0a050"/>
+<path d="M180 125 L188 75 L193 75 L185 125Z" fill="#e8735a"/><path d="M170 128 L176 85 L180 85 L174 128Z" fill="#e8735a"/>
+<ellipse cx="80" cy="95" rx="4" ry="2.5" fill="#ff6b35"/><ellipse cx="160" cy="100" rx="4" ry="2.5" fill="#4fc3f7"/>
+<circle cx="50" cy="45" r="2" fill="rgba(255,255,255,0.2)"/><circle cx="130" cy="50" r="1.8" fill="rgba(255,255,255,0.2)"/><circle cx="200" cy="55" r="2" fill="rgba(255,255,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a8_v2_vg)"/>
+</svg>`,
+    '8_3': `<svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="a8_v3_bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#061d33"/><stop offset="0.4" stop-color="#0a3560"/><stop offset="1" stop-color="#0f5a8a"/></linearGradient><radialGradient id="a8_v3_vg"><stop offset="0.6" stop-color="transparent"/><stop offset="1" stop-color="rgba(0,0,0,0.5)"/></radialGradient><linearGradient id="a8_v3_ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(150,200,255,0.1)"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+<rect width="240" height="160" fill="url(#a8_v3_bg)"/>
+<polygon points="30,0 60,0 160,160 90,160" fill="url(#a8_v3_ray)" opacity="0.4"/><polygon points="130,0 160,0 220,160 180,160" fill="url(#a8_v3_ray)" opacity="0.25"/>
+<path d="M80 60 Q140 20 180 55 Q200 70 190 85 Q150 95 100 80 Q70 70 80 60Z" fill="#1a2a3a" opacity="0.7"/>
+<path d="M120 40 Q180 0 210 30 Q100 120 50 110 Q80 60 120 40Z" fill="#2a3a4a" opacity="0.5"/>
+<path d="M130 55 L140 48 L145 52 L135 59Z" fill="#1a2a3a" opacity="0.6"/>
+<ellipse cx="160" cy="105" rx="4" ry="2.5" fill="#3a4a5a" opacity="0.5"/>
+<circle cx="60" cy="45" r="2" fill="rgba(150,200,255,0.2)"/><circle cx="180" cy="50" r="1.8" fill="rgba(150,200,255,0.15)"/>
+<rect width="240" height="160" fill="url(#a8_v3_vg)"/>
+</svg>`
+  };
 
   // ==============================================
   // 2. ИНИЦИАЛИЗАЦИЯ ВСЕХ МОДУЛЕЙ
@@ -378,7 +720,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="gallery-slider__track" id="galleryTrack${item.id}">
             ${views.map((v, i) =>
               `<div class="gallery-slider__slide ${i === 0 ? 'gallery-slider__slide--active' : ''}">
-                <span class="gallery-item__icon">${v.emoji}</span>
+                ${v.svgKey && aquariumViews[v.svgKey] ? aquariumViews[v.svgKey] : `<span class="gallery-item__icon">${v.emoji}</span>`}
               </div>`
             ).join('')}
           </div>
@@ -487,7 +829,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderView(index) {
       const v = views[index];
-      document.getElementById('lightboxEmoji').textContent = v.emoji;
+      const emojiEl = document.getElementById('lightboxEmoji');
+      if (v.svgKey && aquariumViews[v.svgKey]) {
+        emojiEl.innerHTML = aquariumViews[v.svgKey];
+      } else {
+        emojiEl.textContent = v.emoji;
+      }
       document.getElementById('lightboxTitle').textContent = item.title;
       document.getElementById('lightboxVolume').textContent = item.volume;
       document.getElementById('lightboxType').textContent = item.type;
