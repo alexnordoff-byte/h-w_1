@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, author: 'КреветкоЛюб', avatar: '🦐', title: 'Креветки-альбиносы: опыт разведения', text: 'Вывел свою популяцию вишен-альбиносов! Делюсь опытом.', tags: ['#креветки', '#разведение', '#вишни'], reactions: { fish: 31, heart: 28, search: 14 }, replies: 23 }
       ],
       gallery: [
-        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'], views: [{svgKey:'1_0',emoji:'🪸',label:'Общий вид',desc:'Крупный риф с мягкими и жёсткими кораллами под голубым светом'},{svgKey:'1_1',emoji:'🐠',label:'Коралловый сад',desc:'Разноцветные рыбы среди коралловых полипов'},{svgKey:'1_2',emoji:'🫧',label:'Стая в толще',desc:'Косяк рыб в открытой голубой воде'},{svgKey:'1_3',emoji:'🪸',label:'Сверху',desc:'Вид на риф сверху — структура кораллов'}] },
-        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'], views: [{svgKey:'2_0',emoji:'🌳',label:'Панорама',desc:'Плотные заросли амазонских растений вдоль задней стенки'},{svgKey:'2_1',emoji:'🪵',label:'Коряги',desc:'Натуральные коряги создают укрытия для скалярий'},{svgKey:'2_2',emoji:'🍂',label:'Дно',desc:'Листовой опад и мягкий грунт — естественная среда'},{svgKey:'2_3',emoji:'🐟',label:'Скалярии',desc:'Скалярии среди вертикальных стеблей растений'}] },
+        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'], views: [{img:'IMAGE/rp1.png',svgKey:'1_0',emoji:'🪸',label:'Общий вид',desc:'Крупный риф с мягкими и жёсткими кораллами под голубым светом'},{img:'IMAGE/rp2.png',svgKey:'1_1',emoji:'🐠',label:'Коралловый сад',desc:'Разноцветные рыбы среди коралловых полипов'},{img:'IMAGE/rp3.png',svgKey:'1_2',emoji:'🫧',label:'Стая в толще',desc:'Косяк рыб в открытой голубой воде'},{img:'IMAGE/rp4.png',svgKey:'1_3',emoji:'🪸',label:'Сверху',desc:'Вид на риф сверху — структура кораллов'}] },
+        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'], views: [{img:'IMAGE/ab1.jpeg',svgKey:'2_0',emoji:'🌳',label:'Панорама',desc:'Плотные заросли амазонских растений вдоль задней стенки'},{img:'IMAGE/ab2.jpeg',svgKey:'2_1',emoji:'🪵',label:'Коряги',desc:'Натуральные коряги создают укрытия для скалярий'},{img:'IMAGE/ab3.jpeg',svgKey:'2_2',emoji:'🍂',label:'Дно',desc:'Листовой опад и мягкий грунт — естественная среда'},{img:'IMAGE/ab4.jpeg',svgKey:'2_3',emoji:'🐟',label:'Скалярии',desc:'Скалярии среди вертикальных стеблей растений'}] },
         { id: 3, title: 'Голландский травник', volume: '180л', type: 'Пресноводный', emoji: '🌿', tags: ['травник', 'растения', 'голландский'], views: [{svgKey:'3_0',emoji:'🌿',label:'Общий план',desc:'Классический голландский аквариум с террасами растений'},{svgKey:'3_1',emoji:'🌱',label:'Передний план',desc:'Ковёр из хемиантуса и бликсы на переднем плане'},{svgKey:'3_2',emoji:'🌺',label:'Цветущий',desc:'Надводные цветы людвигии и роталы'}] },
         { id: 4, title: 'Цихлидник', volume: '300л', type: 'Пресноводный', emoji: '🪨', tags: ['цихлиды', 'пресноводный', 'камни'], views: [{svgKey:'4_0',emoji:'🪨',label:'Каменный пейзаж',desc:'Горки из камней формируют природный ландшафт'},{svgKey:'4_1',emoji:'🦎',label:'Обитатели',desc:'Мбуна с яркой окраской охраняют свою территорию'},{svgKey:'4_2',emoji:'🏝️',label:'Вид сверху',desc:'Все камни и пещеры видны при верхнем освещении'},{svgKey:'4_3',emoji:'🪨',label:'В пещере',desc:'Внутри каменной пещеры с цихлидами'}] },
         { id: 5, title: 'Мини-нано', volume: '20л', type: 'Пресноводный', emoji: '🫧', tags: ['нано', 'пресноводный', 'новичкам'], views: [{svgKey:'5_0',emoji:'🫧',label:'Общий вид',desc:'Компактный травник с креветками и мхами'},{svgKey:'5_1',emoji:'🦐',label:'Креветки',desc:'Красные кристаллы пасутся на листьях яванского мха'},{svgKey:'5_2',emoji:'💎',label:'Макро',desc:'Крупный план мелких растений и мха'},{svgKey:'5_3',emoji:'🫧',label:'Миниатюра',desc:'Весь миниатюрный мир в малом объёме'}] },
@@ -720,7 +720,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="gallery-slider__track" id="galleryTrack${item.id}">
             ${views.map((v, i) =>
               `<div class="gallery-slider__slide ${i === 0 ? 'gallery-slider__slide--active' : ''}">
-                ${v.svgKey && aquariumViews[v.svgKey] ? aquariumViews[v.svgKey] : `<span class="gallery-item__icon">${v.emoji}</span>`}
+                ${v.img ? `<img src="${v.img}" alt="${v.label}" class="gallery-slider__img">` : (v.svgKey && aquariumViews[v.svgKey] ? aquariumViews[v.svgKey] : `<span class="gallery-item__icon">${v.emoji}</span>`)}
               </div>`
             ).join('')}
           </div>
@@ -830,7 +830,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderView(index) {
       const v = views[index];
       const emojiEl = document.getElementById('lightboxEmoji');
-      if (v.svgKey && aquariumViews[v.svgKey]) {
+      if (v.img) {
+        emojiEl.innerHTML = `<img src="${v.img}" alt="${v.label}" class="lightbox__img">`;
+      } else if (v.svgKey && aquariumViews[v.svgKey]) {
         emojiEl.innerHTML = aquariumViews[v.svgKey];
       } else {
         emojiEl.textContent = v.emoji;

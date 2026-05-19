@@ -1029,7 +1029,8 @@ input, textarea, select {
   opacity: 0.7;
 }
 
-.gallery-slider__slide svg {
+.gallery-slider__slide svg,
+.gallery-slider__slide img {
   display: block;
   width: 100%;
   height: auto;
@@ -1300,7 +1301,8 @@ input, textarea, select {
   font-size: 4rem;
 }
 
-.lightbox__emoji svg {
+.lightbox__emoji svg,
+.lightbox__emoji img {
   display: block;
   width: 100%;
   max-width: 360px;
