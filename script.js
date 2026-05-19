@@ -60,14 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, author: 'КреветкоЛюб', avatar: '🦐', title: 'Креветки-альбиносы: опыт разведения', text: 'Вывел свою популяцию вишен-альбиносов! Делюсь опытом.', tags: ['#креветки', '#разведение', '#вишни'], reactions: { fish: 31, heart: 28, search: 14 }, replies: 23 }
       ],
       gallery: [
-        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'] },
-        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'] },
-        { id: 3, title: 'Голландский травник', volume: '180л', type: 'Пресноводный', emoji: '🌿', tags: ['травник', 'растения', 'голландский'] },
-        { id: 4, title: 'Цихлидник', volume: '300л', type: 'Пресноводный', emoji: '🪨', tags: ['цихлиды', 'пресноводный', 'камни'] },
-        { id: 5, title: 'Мини-нано', volume: '20л', type: 'Пресноводный', emoji: '🫧', tags: ['нано', 'пресноводный', 'новичкам'] },
-        { id: 6, title: 'Псевдоморе', volume: '120л', type: 'Псевдоморе', emoji: '🦀', tags: ['псевдоморе', 'цихлиды', 'африка'] },
-        { id: 7, title: 'Терапевтический', volume: '60л', type: 'Пресноводный', emoji: '🌸', tags: ['креветки', 'растения', 'мирный'] },
-        { id: 8, title: 'Морской гигант', volume: '800л', type: 'Морской', emoji: '🐋', tags: ['морской', 'большой', 'риф'] }
+        { id: 1, title: 'Рифовый рай', volume: '450л', type: 'Морской', emoji: '🪸', tags: ['риф', 'морской', 'кораллы'], views: [{emoji:'🪸', label:'Общий вид', desc:'Крупный риф с мягкими и жёсткими кораллами'},{emoji:'🐠', label:'Рыбки', desc:'Стая разноцветных рыб между кораллов'},{emoji:'🫧', label:'Пузырьки', desc:'Воздушные пузырьки создают динамичный фон'}] },
+        { id: 2, title: 'Амазонский биотоп', volume: '250л', type: 'Биотоп', emoji: '🌳', tags: ['биотоп', 'пресноводный', 'растения'], views: [{emoji:'🌳', label:'Панорама', desc:'Плотные заросли амазонских растений'},{emoji:'🪵', label:'Коряги', desc:'Натуральные коряги для скалярий'},{emoji:'🍂', label:'Дно', desc:'Листовой опад и мягкий грунт'}] },
+        { id: 3, title: 'Голландский травник', volume: '180л', type: 'Пресноводный', emoji: '🌿', tags: ['травник', 'растения', 'голландский'], views: [{emoji:'🌿', label:'Общий план', desc:'Террасы растений в голландском стиле'},{emoji:'🌱', label:'Ковёр', desc:'Хемиантус и бликса на переднем плане'},{emoji:'🌺', label:'Цветение', desc:'Надводные цветы людвигии'}] },
+        { id: 4, title: 'Цихлидник', volume: '300л', type: 'Пресноводный', emoji: '🪨', tags: ['цихлиды', 'пресноводный', 'камни'], views: [{emoji:'🪨', label:'Пейзаж', desc:'Горки из камней формируют ландшафт'},{emoji:'🦎', label:'Мбуна', desc:'Яркие цихлиды охраняют территорию'},{emoji:'🏝️', label:'Сверху', desc:'Все пещеры видны при верхнем свете'}] },
+        { id: 5, title: 'Мини-нано', volume: '20л', type: 'Пресноводный', emoji: '🫧', tags: ['нано', 'пресноводный', 'новичкам'], views: [{emoji:'🫧', label:'Общий вид', desc:'Компактный травник с креветками'},{emoji:'🦐', label:'Креветки', desc:'Красные кристаллы на мхах'},{emoji:'💎', label:'Деталь', desc:'Миниатюрный мир в малом объёме'}] },
+        { id: 6, title: 'Псевдоморе', volume: '120л', type: 'Псевдоморе', emoji: '🦀', tags: ['псевдоморе', 'цихлиды', 'африка'], views: [{emoji:'🦀', label:'Панорама', desc:'Голубое освещение как на рифе'},{emoji:'🏔️', label:'Камни', desc:'Коралловые камни в пресной воде'},{emoji:'🐟', label:'Рыбы', desc:'Малавийцы на фоне белого песка'}] },
+        { id: 7, title: 'Терапевтический', volume: '60л', type: 'Пресноводный', emoji: '🌸', tags: ['креветки', 'растения', 'мирный'], views: [{emoji:'🌸', label:'Общий вид', desc:'Мягкое освещение и стая неонов'},{emoji:'✨', label:'Неоны', desc:'Голубые вспышки в толще воды'},{emoji:'🌿', label:'Растения', desc:'Валлиснерия и ротала'}] },
+        { id: 8, title: 'Морской гигант', volume: '800л', type: 'Морской', emoji: '🐋', tags: ['морской', 'большой', 'риф'], views: [{emoji:'🐋', label:'Панорама', desc:'Крупнейший риф длиной 2 метра'},{emoji:'🦈', label:'Акулы', desc:'Акулы и скаты в свободном плавании'},{emoji:'🪸', label:'Кораллы', desc:'Сотни видов от зелёных до фиолетовых'}] }
       ],
       faq: [
         { q: 'Сколько литров нужно для начинающего?', a: 'Оптимальный объём — 80–150 литров. В маленьких аквариумах сложнее поддерживать стабильные параметры.' },
@@ -371,22 +371,76 @@ document.addEventListener('DOMContentLoaded', () => {
     const masonry = document.getElementById('galleryMasonry');
     if (!masonry || !contentData) return;
 
-    masonry.innerHTML = contentData.gallery.map(item =>
-      `<div class="gallery-item reveal" data-tags="${item.tags.join(',')}">
-        <span class="gallery-item__icon">${item.emoji}</span>
+    masonry.innerHTML = contentData.gallery.map(item => {
+      const views = item.views || [{emoji: item.emoji, label: '', desc: ''}];
+      return `<div class="gallery-item reveal" data-tags="${item.tags.join(',')}" data-id="${item.id}">
+        <div class="gallery-slider" id="gallerySlider${item.id}">
+          <div class="gallery-slider__track" id="galleryTrack${item.id}">
+            ${views.map((v, i) =>
+              `<div class="gallery-slider__slide ${i === 0 ? 'gallery-slider__slide--active' : ''}">
+                <span class="gallery-item__icon">${v.emoji}</span>
+              </div>`
+            ).join('')}
+          </div>
+          <div class="gallery-slider__dots" id="galleryDots${item.id}">
+            ${views.map((v, i) =>
+              `<button class="gallery-slider__dot ${i === 0 ? 'gallery-slider__dot--active' : ''}" data-index="${i}" aria-label="${v.label}"></button>`
+            ).join('')}
+          </div>
+          <button class="gallery-slider__arrow gallery-slider__arrow--prev" data-id="${item.id}" aria-label="Назад">&#10094;</button>
+          <button class="gallery-slider__arrow gallery-slider__arrow--next" data-id="${item.id}" aria-label="Вперёд">&#10095;</button>
+        </div>
         <h3 class="gallery-item__title">${item.title}</h3>
         <p class="gallery-item__meta">${item.volume} · ${item.type}</p>
-      </div>`
-    ).join('');
+      </div>`;
+    }).join('');
+
+    // Инициализация слайдеров
+    document.querySelectorAll('.gallery-slider').forEach(slider => {
+      const id = slider.querySelector('.gallery-slider__arrow').dataset.id;
+      const track = document.getElementById(`galleryTrack${id}`);
+      const dots = slider.querySelectorAll('.gallery-slider__dot');
+      let current = 0;
+
+      function goTo(index) {
+        current = index;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d, i) => {
+          d.classList.toggle('gallery-slider__dot--active', i === current);
+        });
+        slider.querySelectorAll('.gallery-slider__slide').forEach((s, i) => {
+          s.classList.toggle('gallery-slider__slide--active', i === current);
+        });
+      }
+
+      slider.querySelector('.gallery-slider__arrow--prev').addEventListener('click', e => {
+        e.stopPropagation();
+        const item = contentData.gallery.find(g => g.id == id);
+        const views = item.views || [{emoji: item.emoji}];
+        goTo((current - 1 + views.length) % views.length);
+      });
+
+      slider.querySelector('.gallery-slider__arrow--next').addEventListener('click', e => {
+        e.stopPropagation();
+        const item = contentData.gallery.find(g => g.id == id);
+        const views = item.views || [{emoji: item.emoji}];
+        goTo((current + 1) % views.length);
+      });
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', e => {
+          e.stopPropagation();
+          goTo(parseInt(dot.dataset.index));
+        });
+      });
+    });
 
     // Открытие лайтбокса
     masonry.querySelectorAll('.gallery-item').forEach(el => {
       el.addEventListener('click', () => {
-        const title = el.querySelector('.gallery-item__title').textContent;
-        const meta = el.querySelector('.gallery-item__meta').textContent;
-        const emoji = el.querySelector('.gallery-item__icon').textContent;
-        const [volume, type] = meta.split('·').map(s => s.trim());
-        openLightbox(title, volume, type, emoji);
+        const id = parseInt(el.dataset.id);
+        const item = contentData.gallery.find(g => g.id === id);
+        if (item) openGalleryLightbox(item);
       });
     });
   }
@@ -421,19 +475,87 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==============================================
-  // 10. ЛАЙТБОКС
+  // 10. ЛАЙТБОКС ГАЛЕРЕИ
   // ==============================================
-  function openLightbox(title, volume, type, emoji) {
+  function openGalleryLightbox(item) {
     const lb = document.getElementById('lightbox');
     if (!lb) return;
 
-    document.getElementById('lightboxEmoji').textContent = emoji;
-    document.getElementById('lightboxTitle').textContent = title;
-    document.getElementById('lightboxVolume').textContent = volume;
-    document.getElementById('lightboxType').textContent = type;
+    const views = item.views || [{emoji: item.emoji, label: '', desc: item.volume + ' · ' + item.type}];
+
+    let currentView = 0;
+
+    function renderView(index) {
+      const v = views[index];
+      document.getElementById('lightboxEmoji').textContent = v.emoji;
+      document.getElementById('lightboxTitle').textContent = item.title;
+      document.getElementById('lightboxVolume').textContent = item.volume;
+      document.getElementById('lightboxType').textContent = item.type;
+
+      // Показываем описание вида
+      const body = document.getElementById('lightboxBody');
+      let viewLabel = body.querySelector('.lightbox__view-label');
+      let viewDesc = body.querySelector('.lightbox__view-desc');
+      if (!viewLabel) {
+        viewLabel = document.createElement('p');
+        viewLabel.className = 'lightbox__view-label';
+        body.querySelector('.lightbox__placeholder').appendChild(viewLabel);
+        viewDesc = document.createElement('p');
+        viewDesc.className = 'lightbox__view-desc';
+        body.querySelector('.lightbox__placeholder').appendChild(viewDesc);
+      }
+      viewLabel.textContent = v.label ? `${v.label} (${index + 1}/${views.length})` : '';
+      viewDesc.textContent = v.desc || '';
+
+      // Стрелки в лайтбоксе
+      let nav = body.querySelector('.lightbox__nav');
+      if (!nav) {
+        nav = document.createElement('div');
+        nav.className = 'lightbox__nav';
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'lightbox__nav-btn lightbox__nav-btn--prev';
+        prevBtn.innerHTML = '&#10094;';
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'lightbox__nav-btn lightbox__nav-btn--next';
+        nextBtn.innerHTML = '&#10095;';
+        nav.appendChild(prevBtn);
+        nav.appendChild(nextBtn);
+        body.querySelector('.lightbox__placeholder').appendChild(nav);
+
+        prevBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          currentView = (currentView - 1 + views.length) % views.length;
+          renderView(currentView);
+        });
+        nextBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          currentView = (currentView + 1) % views.length;
+          renderView(currentView);
+        });
+      }
+
+      // Точки
+      let dotsContainer = body.querySelector('.lightbox__dots');
+      if (!dotsContainer) {
+        dotsContainer = document.createElement('div');
+        dotsContainer.className = 'lightbox__dots';
+        body.querySelector('.lightbox__placeholder').appendChild(dotsContainer);
+      }
+      dotsContainer.innerHTML = views.map((v, i) =>
+        `<button class="lightbox__dot ${i === index ? 'lightbox__dot--active' : ''}" data-idx="${i}"></button>`
+      ).join('');
+      dotsContainer.querySelectorAll('.lightbox__dot').forEach(d => {
+        d.addEventListener('click', e => {
+          e.stopPropagation();
+          currentView = parseInt(e.target.dataset.idx);
+          renderView(currentView);
+        });
+      });
+    }
 
     lb.classList.add('lightbox--open');
     document.body.style.overflow = 'hidden';
+    renderView(0);
 
     const close = () => {
       lb.classList.remove('lightbox--open');
@@ -451,11 +573,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', function handler(e) {
       if (e.key === 'Escape') { close(); document.removeEventListener('keydown', handler); }
+      if (e.key === 'ArrowLeft') { currentView = (currentView - 1 + views.length) % views.length; renderView(currentView); }
+      if (e.key === 'ArrowRight') { currentView = (currentView + 1) % views.length; renderView(currentView); }
     });
-  }
-
-  function initLightbox() {
-    // Инициализация уже включена в buildGallery
   }
 
   // ==============================================
